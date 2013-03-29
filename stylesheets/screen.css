@@ -118,22 +118,6 @@ div.shell {
   margin: 0 auto;
 }
 
-a#forkme_banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 138px;
-  height: 138px;
-  display: block;
-  background: transparent url(../images/fork-sprite.png) 0 0 no-repeat;
-  text-indent: -9000px;
-  z-index: 3;
-}
-
-a#forkme_banner:hover {
-  background-position: 0 -138px;
-}
-
 /* header */
 
 header {
@@ -383,7 +367,7 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', Myriad, Calibri, sans-serif;
+  font-family: 'Noto Serif', Myriad, Calibri, sans-serif;
   font-weight: bold;
 }
 
