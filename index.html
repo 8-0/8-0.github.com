@@ -12,7 +12,7 @@
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
-      (function(a){a.fn.headsmart=function(){var c=a(this);d();function d(){var e=[],g="";if(b("h1")){e.push("h1")}if(b("h2")){e.push("h2")}if(b("h3")){e.push("h3")}if(b("h4")){e.push("h4")}if(b("h5")){e.push("h5")}if(b("h6")){e.push("h6")}for(var f=0;f<e.length;f++){c.children(e[f]).addClass("header-level-"+(f+1))}}function b(f){return(c.children(f).length>0)?true:false}}})(jQuery);
+      (function(a){a.fn.headsmart=function(){var c=a(this);d();function d(){var e=[],g="";if(b("h1")){e.push("h1")}if(b("h2")){e.push("h2")}if(b("h3")){e.push("h3")}if(b("h3")){e.push("h3")}if(b("h5")){e.push("h5")}if(b("h6")){e.push("h6")}for(var f=0;f<e.length;f++){c.children(e[f]).addClass("header-level-"+(f+1))}}function b(f){return(c.children(f).length>0)?true:false}}})(jQuery);
       $(document).ready(function () {
         $('#main_content').headsmart()
       })
@@ -44,8 +44,21 @@
 
 
       <section id="main_content">
+<h3>Full restore SPH-L710 with <a href="//www.android.com/versions/kit-kat-4-4/">KitKat</a> on linux.</h3>
+<p>
+Давно хотел попробовать платежи NFC телефоном через Приват24. Карта <abbr title="Master Card">MC</abbr> PayPass хоть и удобна, это лишняя вещь которую нужно непроебать.  Думаю, оплата в McDonalds или AТБ прикосновением телефона, должна иметь приятный wow factor. Всего-то нужно было обновить телефон до  <a href="//www.android.com/intl/ru/versions/kit-kat-4-4/">Android 4.4</a>. Причём 500MB <abbr title="over the air">OTA</abbr> апдейта давно ждали в телефоне своего часа.</p><p>
 
-<h4>Каким языкам программирования учить в колледже?</h4>
+  Но не всё так просто, мой Galaxy S2 это SPH-L710 от оператора Sprint подключен <a href="http://people.net.ua/">PeopleNet</a>. И установка хакерских 4-4 прошивок приводила CDMA 3G соединение к нерабочему состоянию. Потому апедйтить не спешил, но оказалось с официальной прошивкой всё ОК.</p><p>
+
+Запустил установку OTA апдейта, телефон перегрузился в рекавери, в моём случае это был clockwork, где было предложино шить неподписаный ZIP. Я не рескнул и решить ставить Full Restore. Под Windows это делается через ODIN. Причём в данном случае прошивка поставляется в виде ODIN One Click инстолера, т.е. прошивка и программа в одном EXE. распоковать его может <a href="//github.com/h0tw1r3/exodin">exodin</a>. А шьется эта непонятная кучка файлов такой командой
+<code>sudo heimdall flash --MODEM NON-HLOS.bin --ABOOT aboot.mbn --BOOT boot.img --RECOVERY recovery.img --RPM rpm.mbn --SBL2 sbl2.mbn --SBL3 sbl3.mbn --SYSTEM system.img.ext4 --TZ tz.mbn --CACHE cache.img.ext4</code>
+</p><p>
+
+  По завершению, первым делом поставил гугловский ланчер вместо самсунговского уёбища:
+  </p><p>
+<img src="https://farm4.staticflickr.com/3875/14820531899_9224cbf0dc.jpg" width="180" height="320" alt="Just installed KitKat"></p>
+
+<h3>Каким языкам программирования учить в колледже?</h3>
 <em><a href="http://habrahabr.ru/qa/23082/">обсуждал</a> комок седых волос™ и <a href="http://habrahabr.ru/qa/23082/#answer_94684">не понимал</a> почему haskel вполне для этих целях <a href='http://www.haskell.org/haskellwiki/Haskell_in_education'>годен</a>.</em>
 <p>Вчера вот я узнал что прекрасный, легендарный IT Лицей в моём городе своим ученикам предлагает первым ЯП велеколенийший C#. Не даром этот язык очень популярен в странах „Варшавского блока“ :-/
 </p>
